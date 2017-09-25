@@ -1,0 +1,4 @@
+@TODO
+
+!-5 ARRUMAR AS ROTAS in App.vue
+	`router-active-class` = is-active module.exports = [ router-active-class: 'is-active']
