@@ -4945,6 +4945,10 @@ vue@^2.4.2:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.4.2.tgz#a9855261f191c978cc0dc1150531b8d08149b58c"
 
+vuex-cache@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/vuex-cache/-/vuex-cache-0.3.1.tgz#0a9ef8e600859457ccb7a7cae9960fd0a6871dad"
+
 vuex@^2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/vuex/-/vuex-2.4.0.tgz#e1d0430646282b40007fdd06ec6ae88a9f5a1e14"

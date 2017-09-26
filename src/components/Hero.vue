@@ -1,13 +1,29 @@
  <template>
     <div>
-
       <div class="container">
         <div class="columns">
           <div class="column is-6">
-            <figure class="image is-2by2 is-ancestor">
-              <!--<img :src="'https://api.opendota.com' + hero.img">-->
-              <progressive-img src="../../static/img/teste.gif" placeholder="../../static/img/500x500.png"></progressive-img>
+            <figure class="image is-2by2">
+              <progressive-img :placeholder="'https://api.opendota.com' + hero.img" :src="'https://api.opendota.com' + hero.img"></progressive-img>
+              <div class="top-right">
+                <div v-if="hero.primary_attr == 'agi'">
+                  <figure class="icon is-2by2">
+                    <img src="http://cdn.dota2.com/apps/dota2/images/heropedia/overviewicon_agi.png">
+                  </figure>
+                </div>
+                <div v-else-if="hero.primary_attr == 'int'">
+                  <figure class="icon">
+                    <img src="http://cdn.dota2.com/apps/dota2/images/heropedia/overviewicon_int.png">
+                  </figure>
+                </div>
+                <div v-else="hero.primary_attr == 'str'">
+                  <figure class="icon is-2by2">
+                    <img src="http://cdn.dota2.com/apps/dota2/images/heropedia/overviewicon_str.png" alt="Streght">
+                  </figure>
+                </div>
+              </div>
             </figure>
+
           </div>
           <div class="column is-5">
             <span class="title is-3">{{ $route.params.localized_name }}</span>
@@ -16,22 +32,12 @@
             </span>
             <hr>
             <p>Suspendisse sodales metus justo, ullamcorper iaculis purus interdum in. Sed ultricies enim felis, in interdum urna malesuada a. Morbi id ligula vel leo elementum dignissim quis vel purus. Donec iaculis, est ac maximus vestibulum, sapien mi lacinia urna, at laoreet felis lectus nec urna. Fusce egestas, neque vitae blandit scelerisque, leo arcu pellentesque risus, et volutpat neque nunc id massa. Aenean dapibus leo vel purus malesuada, eu ultrices nulla consequat. Duis erat orci, lobortis sed dictum id, pretium a nibh. Mauris pharetra ligula consequat gravida ornare.
-              asdasd
-              as
-              da
-              sd
-              asd
-              asd
-              as
-              da
-              sd
-              
             </p>
           </div>
         </div>
       </div>
       <div class="container">
-        <b-tabs v-model="activeTab">
+        <b-tabs>
           <b-tab-item label="Overview">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam id quis voluptatum! Commodi corporis dolor doloremque dolores ducimus eaque ex harum illo, necessitatibus nisi numquam obcaecati praesentium repellat totam, vitae?
           </b-tab-item>
@@ -84,7 +90,5 @@
 </script>
 
 <style>
-  .has-text-muted {
-    color: #95A5A6;
-  }
+
 </style>
