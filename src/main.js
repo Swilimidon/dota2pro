@@ -6,10 +6,13 @@ import router from './router'
 import Buefy from 'buefy'
 import 'buefy/lib/buefy.css'
 import 'font-awesome/css/font-awesome.css'
+import VueProgressiveImage from 'vue-progressive-image'
 
 Vue.use(Buefy, {
   defaultIconPack: 'fa'
 })
+
+Vue.use(VueProgressiveImage)
 
 Vue.config.productionTip = false
 

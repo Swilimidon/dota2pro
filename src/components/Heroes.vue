@@ -9,7 +9,7 @@
         <div class="card">
           <div class="card-image">
             <figure class="image is-5by3">
-              <img :src="'https://api.opendota.com' + hero.img" alt="Image">
+              <progressive-img :src="'https://api.opendota.com' + hero.img" placeholder="../../static/img/500x500.png" alt="Image"></progressive-img>
             </figure>
           </div>
           <div class="card-content">
